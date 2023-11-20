@@ -9,6 +9,10 @@ const configDatabase = {
     connectionString: process.env.DATABASE_URL
 }
 
-const db = new Pool(configDatabase);
+if (process.env.NODE_ENV === "production") configDatabase.ssl = true;
 
-export default db;
+export const db = new Pool(configDatabase);
+
+//const db = new Pool(configDatabase);
+
+//export default db;
