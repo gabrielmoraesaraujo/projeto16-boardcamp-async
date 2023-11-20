@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,13 @@
   "homepage": "https://github.com/gabrielmoraesaraujo/projeto16-boardcamp-async#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "joi": "^17.11.0",
-    "nodemon": "^3.0.1",
     "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

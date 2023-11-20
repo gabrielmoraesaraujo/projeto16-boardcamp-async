@@ -1,8 +1,12 @@
 import { Router } from "express"
-import boardRouter from "./routesGames.js"
+import gamesRouter from "./routesGames.js"
+import rentalsRouter from "./routes.retals.js"
+import customersRouter from "./routes.customers.js"
 
 const router = Router()
 
-router.use(boardRouter)
+router.use(gamesRouter)
+router.use(rentalsRouter)
+router.use(customersRouter)
 
 export default router
