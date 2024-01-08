@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { createCustomer, getCustomerById, getCustomers, updateCustomer } from "../controllers/customers.cotrollers.js"
+import { createCustomer, getCustomerById, getCustomers, updateCustomer } from "../Controllers/controller.users.js"
 import validateSchema from "../middlewares/validateSchema.middleware.js"
 import { customerSchema } from "../schemas/customers.schemas.js"
 
